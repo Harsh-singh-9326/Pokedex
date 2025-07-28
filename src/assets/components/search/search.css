@@ -1,0 +1,10 @@
+.search-input {
+    width: 50vw;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px; /* Some spacing below the heading */
+}

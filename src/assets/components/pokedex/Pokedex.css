@@ -1,0 +1,13 @@
+.pokedex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: brown;
+
+    /* Add this */
+    width: 100vw;          /* Full width of screen */
+    text-align: center;    /* Center the text */
+}
