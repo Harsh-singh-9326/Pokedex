@@ -40,8 +40,7 @@ cd pokedex-app
 Install dependencies
 
 bash
-Copy
-Edit
+
 npm install
 Start the app
 
@@ -60,6 +59,4 @@ Feel free to fork this project, make improvements, and raise a pull request!
 📄 License
 This project is open-source and available under the MIT License.
 
-yaml
-Copy
-Edit
+
