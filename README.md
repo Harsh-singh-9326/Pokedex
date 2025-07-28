@@ -1,12 +1,65 @@
-# React + Vite
+# 🧩 Pokedex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that fetches and displays a list of Pokémon using the [PokeAPI](https://pokeapi.co/).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Search bar to input Pokémon names
+- 📦 Fetch Pokémon data from API
+- 🧾 Display Pokémon list (coming soon)
+- 🎨 Clean UI with centered layout
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Axios
+- CSS
+
+## 📂 Project Structure
+
+my-pokedex-app/
+├── src/
+│ ├── components/
+│ │ ├── Search.jsx
+│ │ └── PokemonList.jsx
+│ ├── App.jsx
+│ ├── index.js
+│ └── styles/
+│ └── styles.css
+
+bash
+Copy
+Edit
+
+## 📥 Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/harsh-singh-9326/pokedex-app.git
+cd pokedex-app
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Start the app
+
+bash
+npm run dev
+# or
+npm start
+🌐 API Reference
+Base URL: https://pokeapi.co/api/v2/pokemon
+
+🖼️ Screenshot
+
+🤝 Contribution
+Feel free to fork this project, make improvements, and raise a pull request!
+
+📄 License
+This project is open-source and available under the MIT License.
+
+yaml
+Copy
+Edit
