@@ -49,7 +49,7 @@ export default function Pokemonlist() {
         {isloading
           ? "loading....."
           : pokemonlist.map((p) => (
-              <Pokemon name={p.name} image={p.image} type={p.type} key={p.id} />
+              <Pokemon name={p.name} image={p.image} type={p.type} key={p.id} id={p.id}/>
             ))}
       </div>
       <div className="button-group">
