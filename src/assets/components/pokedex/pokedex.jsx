@@ -37,7 +37,7 @@ export default function Pokedex() {
   return (
     <div className="pokedex-container">
       <h1 className="pokedex-title">
-        <Link to="/">POKÉDEX</Link>
+        <Link to="/">POKEDEX</Link>
       </h1>
       <Search value={searchTerm} onSearch={setSearchTerm} />
 
