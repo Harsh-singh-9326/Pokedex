@@ -46,6 +46,7 @@
 .pokedex-title{
     color: red;
     text-align: center;
+    background-image: ;
 }
 /* Hover/keyboard focus highlight */
 .suggestions-list li:hover,

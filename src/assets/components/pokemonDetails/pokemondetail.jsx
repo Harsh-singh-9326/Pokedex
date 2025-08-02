@@ -26,7 +26,7 @@ export default function Pokemondetail() {
 
   useEffect(() => {
     getpokemon();
-  }, []);
+  }, [id]);
 
   if (!Pokemon) return <div>Loading...</div>; // ✅ Prevents crash
 
