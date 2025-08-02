@@ -35,6 +35,7 @@
   cursor: pointer;
   border-bottom: 1px solid #eee;
   text-align: center;
+  color: black;
 }
 
 /* Last row: no bottom border */
