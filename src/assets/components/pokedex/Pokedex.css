@@ -1,13 +1,58 @@
+/* Make parent positioning work reliably — must exist */
 .pokedex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
-    color: brown;
+  position: relative; /* ensures the suggestions dropdown is correctly positioned */
+}
 
-    /* Add this */
-    width: 100vw;          /* Full width of screen */
-    text-align: center;    /* Center the text */
+/* ───────────────────────────────────── */
+/* 🌟 Search Suggestions Dropdown Style */
+/* ───────────────────────────────────── */
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 1000; /* sits above input and other siblings */
+
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Each suggestion row */
+.suggestions-list li {
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+/* Last row: no bottom border */
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+
+/* Hover/keyboard focus highlight */
+.suggestions-list li:hover,
+.suggestions-list li:focus {
+  background-color: #eef;
+  outline: none;
+}
+
+/* Optional: subtle fade scrollbar */
+.suggestions-list::-webkit-scrollbar {
+  width: 6px;
+}
+.suggestions-list::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 3px;
 }

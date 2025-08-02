@@ -1,11 +1,14 @@
 import './search.css';
 
-export default function Search() {
-    return (
-        <input
-            type="text"
-            placeholder="Enter your pokemon name..."
-            className="search-input"
-        />
-    );
+export default function Search({ value, onSearch }) {
+  return (
+    <input
+      type="text"
+      placeholder="Search Pokémon…"
+      value={value}
+      onChange={e => onSearch(e.target.value)}
+      className="search-input"
+    />
+  );
 }
+
